@@ -11,9 +11,13 @@
   <tbody>
     <% @articles.each do |article| %>
       <tr>
-        <td><%= article.title %></td>
+        <td>  
+          <%= link_to article.title, article %>
+        </td>
         <td><%= article.body %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+<%= link_to "New Article", new_article_path %>
