@@ -8,3 +8,7 @@ class CreateArticles < ActiveRecord::Migration[7.1]
     end
   end
 end
+
+
+
+
